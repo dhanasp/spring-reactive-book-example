@@ -22,7 +22,8 @@ public class BookService {
 
     public Flux<Book> getAllBooks() {
         logger.info("Getting all books...");
-        return bookRepository.findAll().switchIfEmpty(Flux.error(new RuntimeException("No books found")));
+        return bookRepository.findAll()
+                .doOnComplete(() -> logger.info("All books retrieved successfully"));
     }
 
     public Mono<Book> getBookById(Long id) {

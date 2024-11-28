@@ -1,4 +1,6 @@
 fileignoreconfig:
 - filename: src/main/resources/application.properties
   checksum: ffad634f98ee549c3fd155769d034b01ac7a2c2c1f8ab9c37ab7e1ef91fb324e
+- filename: src/main/resources/schema.sql
+  checksum: 5b88caa6f9c6702c548c53f2ad076ff9847381fbb700687967dd9ad5b2012548
 version: ""
